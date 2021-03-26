@@ -1,8 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 82.657 s <<< FAILURE! - in TestSuite
-com.crm.vtiger.test.Createorganbyrating_12.rating  Time elapsed: 0.308 s  <<< FAILURE!
+Tests run: 8, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 87.865 s <<< FAILURE! - in TestSuite
+com.crm.vtiger.test.CreateOrganWitMembersof_6.executed  Time elapsed: 0.728 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: Could not initialize class org.apache.poi.xssf.usermodel.XSSFWorkbookFactory
+	at com.crm.vtiger.test.CreateOrganWitMembersof_6.executed(CreateOrganWitMembersof_6.java:22)
+
+com.crm.vtiger.test.Createorganbyrating_12.rating  Time elapsed: 0.76 s  <<< FAILURE!
 java.lang.BootstrapMethodError: java.lang.NoClassDefFoundError: org/apache/poi/ss/usermodel/WorkbookFactory$CreateWorkbook0
 	at com.crm.vtiger.test.Createorganbyrating_12.rating(Createorganbyrating_12.java:18)
 Caused by: java.lang.NoClassDefFoundError: org/apache/poi/ss/usermodel/WorkbookFactory$CreateWorkbook0
@@ -10,30 +14,26 @@ Caused by: java.lang.NoClassDefFoundError: org/apache/poi/ss/usermodel/WorkbookF
 Caused by: java.lang.ClassNotFoundException: org.apache.poi.ss.usermodel.WorkbookFactory$CreateWorkbook0
 	at com.crm.vtiger.test.Createorganbyrating_12.rating(Createorganbyrating_12.java:18)
 
-com.crm.vtiger.test.CreateOrganWitMembersof_6.executed  Time elapsed: 0.648 s  <<< FAILURE!
-java.lang.NoClassDefFoundError: Could not initialize class org.apache.poi.xssf.usermodel.XSSFWorkbookFactory
-	at com.crm.vtiger.test.CreateOrganWitMembersof_6.executed(CreateOrganWitMembersof_6.java:22)
-
-com.crm.vtiger.test.CreateOrganWithAssignedToMarketingGrp_11.cases  Time elapsed: 0.343 s  <<< FAILURE!
-java.lang.NoClassDefFoundError: Could not initialize class org.apache.poi.xssf.usermodel.XSSFWorkbookFactory
-	at com.crm.vtiger.test.CreateOrganWithAssignedToMarketingGrp_11.cases(CreateOrganWithAssignedToMarketingGrp_11.java:25)
-
-com.crm.vtiger.test.CreateOrgaNameCheckForEnable_9.erase  Time elapsed: 0.523 s  <<< FAILURE!
+com.crm.vtiger.test.CreateOrgaNameCheckForEnable_9.erase  Time elapsed: 0.353 s  <<< FAILURE!
 java.lang.NoClassDefFoundError: Could not initialize class org.apache.poi.xssf.usermodel.XSSFWorkbookFactory
 	at com.crm.vtiger.test.CreateOrgaNameCheckForEnable_9.erase(CreateOrgaNameCheckForEnable_9.java:25)
 
-com.crm.vtiger.test.CreateOrganByuserAdmin_10.adminuserdropdon  Time elapsed: 0.194 s  <<< FAILURE!
+com.crm.vtiger.test.CreateOrganWithAssignedToMarketingGrp_11.cases  Time elapsed: 0.573 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: Could not initialize class org.apache.poi.xssf.usermodel.XSSFWorkbookFactory
+	at com.crm.vtiger.test.CreateOrganWithAssignedToMarketingGrp_11.cases(CreateOrganWithAssignedToMarketingGrp_11.java:25)
+
+com.crm.vtiger.test.CreateOrganByuserAdmin_10.adminuserdropdon  Time elapsed: 0.169 s  <<< FAILURE!
 java.lang.NoClassDefFoundError: Could not initialize class org.apache.poi.xssf.usermodel.XSSFWorkbookFactory
 	at com.crm.vtiger.test.CreateOrganByuserAdmin_10.adminuserdropdon(CreateOrganByuserAdmin_10.java:17)
 
-com.crm.vtiger.test.CreateOrganWithMemAndClear_7.erase  Time elapsed: 0.348 s  <<< FAILURE!
+com.crm.vtiger.test.CreateOrganWithMemAndClear_7.erase  Time elapsed: 0.248 s  <<< FAILURE!
 java.lang.AssertionError: expected [true] but found [false]
 	at com.crm.vtiger.test.CreateOrganWithMemAndClear_7.erase(CreateOrganWithMemAndClear_7.java:38)
 
-com.crm.vtiger.test.CreateOrganWithEmailoptOut_8.erase  Time elapsed: 0.582 s  <<< FAILURE!
+com.crm.vtiger.test.CreateOrganWithEmailoptOut_8.erase  Time elapsed: 0.522 s  <<< FAILURE!
 java.lang.NoClassDefFoundError: Could not initialize class org.apache.poi.xssf.usermodel.XSSFWorkbookFactory
 	at com.crm.vtiger.test.CreateOrganWithEmailoptOut_8.erase(CreateOrganWithEmailoptOut_8.java:16)
 
-com.crm.vtiger.test.Createorganbyrating_12.configAfterSuite  Time elapsed: 7.643 s  <<< FAILURE!
+com.crm.vtiger.test.Createorganbyrating_12.configAfterSuite  Time elapsed: 8.675 s  <<< FAILURE!
 java.lang.NullPointerException
 

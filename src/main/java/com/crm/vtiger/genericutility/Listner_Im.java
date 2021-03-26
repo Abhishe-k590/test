@@ -18,10 +18,10 @@ public	ExtentReports reporter;
 public ExtentTest test;
 public void onTestStart(ITestResult result) {
 	// TODO Auto-generated method stub
-	test=reporter.createTest(result.getMethod().getMethodName());
+	test=reporter.createTest(result.getMethod().getMethodName());//on start method name
 }
 
-public void onTestSuccess(ITestResult result) {
+public void onTestSuccess(ITestResult result) {//
 	// TODO Auto-generated method stub
 	test.log(Status.PASS, result.getMethod().getMethodName()+"is passed");
 }
@@ -53,15 +53,15 @@ public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
 	
 }
 
-public void onStart(ITestContext context) {
+public void onStart(ITestContext context) {//on stater
 	// TODO Auto-generated method stub
 	ExtentSparkReporter htmlReporter=new ExtentSparkReporter("./ExtentReport.html");
 	htmlReporter.config().setTheme(Theme.DARK);
 	htmlReporter.config().setDocumentTitle("Vtiger App");
 	htmlReporter.config().setReportName("Full regression test");
  reporter = new ExtentReports();
-reporter.attachReporter(htmlReporter);
-reporter.setSystemInfo("plateform", "windows");
+reporter.attachReporter(htmlReporter);//attach report
+reporter.setSystemInfo("plateform", "windows");//key value pair
 reporter.setSystemInfo("os", "Windows 10 pro");
 reporter.setSystemInfo("Environment", "Testing Environment");
 reporter.setSystemInfo("Reporter", "Abhishek");
@@ -71,6 +71,6 @@ reporter.setSystemInfo("Reporter", "Abhishek");
 
 public void onFinish(ITestContext context) {
 	// TODO Auto-generated method stub
-	reporter.flush();
+	reporter.flush();//to go to the report
 }
 }
